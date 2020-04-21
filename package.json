@@ -1,8 +1,8 @@
 {
-  "name": "with-emotion-10",
+  "name": "indra-web",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/server/index.js",
   "scripts": {
     "dev": "next",
     "build": "next build",

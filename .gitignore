@@ -11,12 +11,11 @@
 # next.js
 /.next/
 /out/
+/src/client/.next/
 
 # production
 /build
-
-# misc
-.DS_Store
+/dist
 
 # debug
 npm-debug.log*

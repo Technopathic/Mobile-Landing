@@ -1,15 +1,26 @@
 {
-  "name": "indra-web",
+  "name": "mobile-landing",
   "version": "1.0.0",
-  "description": "",
+  "description": "When you just need a Landing Page for your Mobile App.",
   "main": "dist/server/index.js",
   "scripts": {
-    "dev": "next",
-    "build": "next build",
-    "start": "next start"
+    "dev": "next src/client",
+    "setup": "yarn firebase use --add",
+    "build:client": "next build src/client",
+    "build:server": "babel src/server --out-dir dist/server --source-maps",
+    "build": "yarn build:client && yarn build:server",
+    "watch:client": "next src/client",
+    "watch:server": "babel src/server --out-dir dist/server --source-maps --watch",
+    "watch": "yarn watch:client & yarn watch:server",
+    "serve": "cross-env NODE_ENV=production yarn firebase serve --only functions,hosting",
+    "predeploy": "rimraf dist/ && yarn build",
+    "deploy": "yarn firebase deploy --only functions,hosting"
+  },
+  "engines": {
+    "node": "10"
   },
   "keywords": [],
-  "author": "Thomas Greco",
+  "author": "Hexteria",
   "license": "ISC",
   "dependencies": {
     "@emotion/core": "10.0.27",
@@ -17,7 +28,18 @@
     "emotion": "10.0.27",
     "emotion-server": "10.0.27",
     "next": "latest",
+    "next-fonts": "^1.0.3",
     "react": "^16.7.0",
-    "react-dom": "^16.7.0"
+    "react-dom": "^16.7.0",
+    "react-icons": "^3.10.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "cross-env": "^7.0.2",
+    "firebase-functions-test": "^0.2.1",
+    "firebase-tools": "^8.1.1",
+    "rimraf": "^3.0.2"
   }
 }

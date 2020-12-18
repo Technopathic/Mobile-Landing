@@ -1,0 +1,54 @@
+{
+    "appName": "",
+    "appSlogan": "",
+    "appLogo": "",
+    "companyName": "",
+    "appleDownload": "",
+    "androidDownload": "",
+    "twitter": "",
+    "instagram": "",
+    "contactEmail": "",
+    "sectionOne": {
+        "imageOne": "",
+        "imageTwo": ""
+    },
+    "sectionTwo": {
+        "sectionTitle": "",
+        "sectionDesc": "",
+        "sectionImage": ""
+    },
+    "sectionThree": {
+        "sectionTitle": "",
+        "sectionItem": [
+            {
+                "itemImage": "",
+                "itemTitle": "",
+                "itemDesc": ""
+            },
+            {
+                "itemImage": "",
+                "itemTitle": "",
+                "itemDesc": ""
+            },
+            {
+                "itemImage": "",
+                "itemTitle": "",
+                "itemDesc": ""
+            }
+        ]
+    },
+    "sectionFour": {
+        "sectionTitle":"",
+        "sectionImage": ""
+    },
+    "sectionFive": {
+        "sectionTitle": "",
+        "sectionDesc": "",
+        "sectionImage": ""
+    },
+    "sectionSix": {
+        "sectionTitle": "",
+        "sectionDesc": "",
+        "sectionImage": ""
+    }
+}
